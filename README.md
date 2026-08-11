@@ -11,7 +11,7 @@ The verified Deploy on Railway button is added only after the published route pa
 - Redis `7.2.3`
 - A Railway Bucket for uploaded learning content
 
-The LearnHouse application serves its frontend, API, real-time collaboration endpoint, and reverse proxy from one public service. PostgreSQL and Redis stay on Railway private networking.
+The LearnHouse application serves its frontend, API, real-time collaboration endpoint, and reverse proxy from one public service. PostgreSQL and Redis stay on Railway private networking. A narrow Redis adapter enables append-only persistence and requires the generated Redis password.
 
 ## First login
 
