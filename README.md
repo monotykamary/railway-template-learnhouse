@@ -2,7 +2,7 @@
 
 A pinned Railway deployment for [LearnHouse](https://github.com/learnhouse/learnhouse), the open-source platform for building learning experiences.
 
-The verified Deploy on Railway button is added only after the published route passes identity and topology checks.
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/learnhouse?referralCode=ZqgrJ0)
 
 ## What this deploys
 
