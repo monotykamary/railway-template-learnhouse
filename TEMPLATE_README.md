@@ -2,7 +2,7 @@
 
 ## About Hosting LearnHouse
 
-LearnHouse is an open-source platform for creating courses and collaborative learning experiences. This template deploys the single-tenant Community edition at stable release `1.3.4`, with durable PostgreSQL, Redis, and S3-compatible media storage.
+LearnHouse is an open-source platform for creating courses and collaborative learning experiences. This template deploys the single-tenant Community edition at stable release `1.3.5`, with durable PostgreSQL, Redis, and S3-compatible media storage.
 
 ## Common Use Cases
 

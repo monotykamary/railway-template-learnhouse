@@ -6,7 +6,7 @@ A pinned Railway deployment for [LearnHouse](https://github.com/learnhouse/learn
 
 ## What this deploys
 
-- LearnHouse Community Edition `1.3.4`
+- LearnHouse Community Edition `1.3.5`
 - PostgreSQL 16 with pgvector `0.8.0`
 - Redis `7.2.3`
 - A Railway Bucket for uploaded learning content
@@ -40,6 +40,6 @@ See [`versions.env`](versions.env). Every production image is pinned by version 
 ## Upstream and license
 
 - Source: https://github.com/learnhouse/learnhouse
-- Release: https://github.com/learnhouse/learnhouse/releases/tag/1.3.4
+- Release: https://github.com/learnhouse/learnhouse/releases/tag/1.3.5
 - Documentation: https://docs.learnhouse.app/self-hosting
 - License: AGPL-3.0; see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)
