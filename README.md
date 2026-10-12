@@ -24,6 +24,7 @@ The template creates the initial administrator from `LEARNHOUSE_INITIAL_ADMIN_EM
 - This is the Community/OSS single-tenant edition, not LearnHouse Enterprise.
 - Code execution needs an external Judge0 API. A privileged Judge0 stack is intentionally not included.
 - AI, outbound email, analytics, and OAuth integrations need their own external credentials.
+- LearnHouse `1.4.0` queues courses for AI-search indexing shortly after start and every three hours. Until an embedding provider key is configured, each pass logs `RAG: indexing failed` errors per course; the application is unaffected. Set `LEARNHOUSE_RAG_BACKFILL_HOURS=0` to turn the pass off.
 - LearnHouse recommends at least 2 GB RAM and 4 GB for comfortable use.
 - Use Railway backups and the upstream migration procedure instead of the Docker-oriented LearnHouse CLI backup/update commands.
 - When adding a custom domain, update all public URL, cookie, CORS, NextAuth, and WebSocket variables together.
