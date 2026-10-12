@@ -2,7 +2,7 @@
 
 ## About Hosting LearnHouse
 
-LearnHouse is an open-source platform for creating courses and collaborative learning experiences. This template deploys the single-tenant Community edition at stable release `1.3.6`, with durable PostgreSQL, Redis, and S3-compatible media storage.
+LearnHouse is an open-source platform for creating courses and collaborative learning experiences. This template deploys the single-tenant Community edition at stable release `1.4.0`, with durable PostgreSQL, Redis, and S3-compatible media storage.
 
 ## Common Use Cases
 
@@ -19,7 +19,7 @@ The template creates four Railway resources: the public `learnhouse` service, pr
 
 ### Implementation Details
 
-The LearnHouse service owns the public HTTPS domain and serves the web app, FastAPI API, and `/collab` WebSocket route from one origin. PostgreSQL uses generated credentials, while a narrow Redis adapter requires its generated password and enables append-only persistence. Initial database installation, organization creation, and administrator creation are driven by generated service variables. Find the initial email and generated password in the LearnHouse service variables, sign in, and rotate the password.
+The LearnHouse service owns the public HTTPS domain and serves the web app, FastAPI API, and `/collab` WebSocket route from one origin. PostgreSQL uses generated credentials, while a narrow Redis adapter requires its generated password and enables append-only persistence. A thin start adapter applies LearnHouse's Alembic database migrations before every start, so the schema follows the pinned release. Initial database installation, organization creation, and administrator creation are driven by generated service variables. Find the initial email and generated password in the LearnHouse service variables, sign in, and rotate the password.
 
 Do not change cross-service database, Redis, Bucket, public URL, cookie, or collaboration references independently. A custom domain requires updating the complete public-origin variable set.
 
