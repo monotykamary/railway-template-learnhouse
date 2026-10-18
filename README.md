@@ -8,7 +8,7 @@ A pinned Railway deployment for [LearnHouse](https://github.com/learnhouse/learn
 
 - LearnHouse Community Edition `1.4.0`
 - PostgreSQL 16 with pgvector `0.8.6`
-- Redis `7.2.3`
+- Redis `7.2.16`
 - A Railway Bucket for uploaded learning content
 
 The LearnHouse application serves its frontend, API, real-time collaboration endpoint, and reverse proxy from one public service. PostgreSQL and Redis stay on Railway private networking. A narrow Redis adapter enables append-only persistence and requires the generated Redis password.
