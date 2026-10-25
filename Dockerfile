@@ -1,7 +1,7 @@
-FROM redis:7.2.16-alpine@sha256:29e8589c3f9ba699b5f7aa4b3c7733c58852a3626439e619aa0ee78de08c6ca0
+FROM redis:7.4.11-alpine@sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541
 
 LABEL org.opencontainers.image.source="https://github.com/monotykamary/railway-template-learnhouse"
-LABEL org.opencontainers.image.version="7.2.16-learnhouse.1"
+LABEL org.opencontainers.image.version="7.4.11-learnhouse.1"
 LABEL org.opencontainers.image.licenses="AGPL-3.0"
 
 COPY redis-entrypoint.sh /usr/local/bin/railway-redis-entrypoint
